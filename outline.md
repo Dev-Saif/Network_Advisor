@@ -1,4 +1,4 @@
-Home :
+Enterprise :
     - Enterprise name
     - Admin name 
     - public ip
