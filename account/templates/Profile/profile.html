@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+        {% block title %}
+
+        <title>Network Advisor | Personal Profile</title>
+
+        {% endblock title %}
+
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+    </head>
+    <body>        
+        
+        {% block header %} 
+             test
+        {% endblock header %}
+
+        {% block footer %}               
+
+        <h1>{{profile.user}}</h1>
+        <ul>
+            <li><b>{{profile.userImg}}</b></li>
+            <li><b>{{profile.floorNum}}</b></li>
+            <li><b>{{profile.deptName}}</b></li>
+            <li><b>{{profile.roomType}}</b></li>
+            <li><b>{{profile.roomNum}}</b></li>
+            <li><b>{{profile.public_ip}}</b></li>
+            <li><b>{{profile.privte_ip}}</b></li>
+        </ul> 
+       
+        {% endblock footer%}        
+    </body>
+</html> 
